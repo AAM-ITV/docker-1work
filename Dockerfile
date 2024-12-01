@@ -1,4 +1,4 @@
-FROM 3.8.7-openjdk-18-slim as maven_builder
+FROM maven:3.8.7-openjdk-18-slim as maven_builder
 RUN git clone https://github.com/AAM-ITV/exam /tmp
 WORKDIR /tmp/exam/
 RUN mvn package
